@@ -1261,12 +1261,8 @@ func (p *Pending) Call(ctx context.Context, args struct {
 	Data ethapi.TransactionArgs
 }) (*CallResult, error) {
 	pendingBlockNr := rpc.BlockNumberOrHashWithNumber(rpc.PendingBlockNumber)
-<<<<<<< HEAD
-	result, err := ethapi.DoCall(ctx, p.r.backend, args.Data, pendingBlockNr, nil, nil, p.r.backend.RPCEVMTimeout(), p.r.backend.RPCGasCap(), core.MessageEthcallMode, false, true)
-=======
 	// Updated DoCall with additional required arguments.
 	result, err := ethapi.DoCall(ctx, p.r.backend, args.Data, pendingBlockNr, nil, nil, p.r.backend.RPCEVMTimeout(), p.r.backend.RPCGasCap(), core.MessageEthcallMode, false, false)
->>>>>>> 64230029 (feat: arbos32)
 	if err != nil {
 		return nil, err
 	}
