@@ -356,3 +356,8 @@ also included in our repository in the `COPYING.LESSER` file.
 The go-ethereum binaries (i.e. all code inside of the `cmd` directory) are licensed under the
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), also
 included in our repository in the `COPYING` file.
+
+This project also integrates **fhEVM-go**, an open-source library developed by Zama.
+
+**fhEVM-go** is distributed under the **BSD-3-Clause-Clear** license.  
+The original source code for this library can be found at [https://github.com/zama-ai/fhevm-go](https://github.com/zama-ai/fhevm-go).
